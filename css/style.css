@@ -502,6 +502,13 @@ h4 { font-size: var(--font-size-lg); }
   color: var(--color-gray-400);
 }
 
+/* --- Coaches List --- */
+.coaches-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
 /* --- Coach Card --- */
 .coach-card {
   display: flex;
@@ -521,6 +528,18 @@ h4 { font-size: var(--font-size-lg); }
 .coach-photo img {
   width: 100%;
   height: auto;
+}
+
+.coach-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-600);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .coach-info h2,
