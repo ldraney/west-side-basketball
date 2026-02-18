@@ -12,7 +12,7 @@
 ```
 west-side-basketball/
 ├── index.html           # Landing/tryouts page
-├── coaches.html         # Coach bios
+├── staff.html           # Staff bios
 ├── success.html         # Post-payment redirect
 ├── css/style.css        # Shared responsive styles
 ├── js/main.js           # Mobile nav, smooth scroll
