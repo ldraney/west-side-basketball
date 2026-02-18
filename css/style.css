@@ -436,6 +436,7 @@ h4 { font-size: var(--font-size-lg); }
   font-size: var(--font-size-sm);
 }
 
+.coach-info h2,
 .coach-info h3 {
   font-size: var(--font-size-2xl);
   margin-bottom: var(--space-xs);
