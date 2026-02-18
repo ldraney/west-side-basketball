@@ -1,0 +1,499 @@
+/* ============================================
+   West Side Basketball — Shared Styles
+   Mobile-first, dark sports aesthetic
+   ============================================ */
+
+/* --- Design Tokens --- */
+:root {
+  /* Colors */
+  --color-navy: #0a1628;
+  --color-charcoal: #1a2332;
+  --color-slate: #2a3444;
+  --color-orange: #e87a2e;
+  --color-orange-hover: #f59042;
+  --color-gold: #f5b731;
+  --color-white: #ffffff;
+  --color-gray-100: #f0f2f5;
+  --color-gray-200: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-600: #6b7280;
+
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3.5rem;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* Layout */
+  --max-width: 1200px;
+  --nav-height: 64px;
+  --border-radius: 6px;
+  --border-radius-lg: 12px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
+
+/* --- Reset --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--color-gray-100);
+  background-color: var(--color-navy);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-orange);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-orange-hover);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* --- Utility --- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+h1 { font-size: var(--font-size-3xl); }
+h2 { font-size: var(--font-size-2xl); }
+h3 { font-size: var(--font-size-xl); }
+h4 { font-size: var(--font-size-lg); }
+
+/* --- Buttons --- */
+.btn {
+  display: inline-block;
+  padding: var(--space-md) var(--space-xl);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-orange-hover);
+  color: var(--color-white);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.btn-lg {
+  padding: var(--space-lg) var(--space-2xl);
+  font-size: var(--font-size-lg);
+}
+
+/* --- Navigation --- */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--color-charcoal);
+  border-bottom: 1px solid var(--color-slate);
+  height: var(--nav-height);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.nav-brand {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.nav-brand:hover {
+  color: var(--color-orange);
+}
+
+.nav-links {
+  display: none;
+  gap: var(--space-xl);
+}
+
+.nav-links a {
+  color: var(--color-gray-200);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.nav-links a:hover {
+  color: var(--color-orange);
+}
+
+/* Hamburger */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-sm);
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-white);
+  transition: transform var(--transition-base), opacity var(--transition-base);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile nav open state */
+.nav-links.is-open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: var(--nav-height);
+  left: 0;
+  right: 0;
+  background-color: var(--color-charcoal);
+  border-bottom: 1px solid var(--color-slate);
+  padding: var(--space-lg);
+  gap: var(--space-lg);
+}
+
+/* --- Hero --- */
+.hero {
+  padding: var(--space-4xl) 0 var(--space-3xl);
+  margin-top: var(--nav-height);
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-charcoal) 100%);
+}
+
+.hero h1 {
+  margin-bottom: var(--space-md);
+}
+
+.hero-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-200);
+  margin-bottom: var(--space-2xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- Sections --- */
+.section {
+  padding: var(--space-3xl) 0;
+}
+
+.section-alt {
+  background-color: var(--color-charcoal);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.section-header h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.section-header p {
+  color: var(--color-gray-400);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- Cards --- */
+.card {
+  background-color: var(--color-charcoal);
+  border: 1px solid var(--color-slate);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-xl);
+}
+
+.section-alt .card {
+  background-color: var(--color-navy);
+}
+
+/* --- Grid --- */
+.grid {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.grid-2 { grid-template-columns: 1fr; }
+.grid-3 { grid-template-columns: 1fr; }
+
+/* --- Steps --- */
+.step {
+  text-align: center;
+  padding: var(--space-xl);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  border-radius: 50%;
+  margin-bottom: var(--space-md);
+}
+
+.step h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.step p {
+  color: var(--color-gray-400);
+}
+
+/* --- FAQ --- */
+.faq-item {
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-slate);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item h3 {
+  color: var(--color-orange);
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-base);
+}
+
+.faq-item p {
+  color: var(--color-gray-400);
+}
+
+/* --- Coach Card --- */
+.coach-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.coach-photo {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 4;
+  background-color: var(--color-slate);
+  border-radius: var(--border-radius-lg);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-400);
+  font-size: var(--font-size-sm);
+}
+
+.coach-info h3 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-xs);
+}
+
+.coach-role {
+  color: var(--color-orange);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.coach-info p {
+  color: var(--color-gray-400);
+  margin-bottom: var(--space-md);
+}
+
+/* --- Footer --- */
+.site-footer {
+  background-color: var(--color-charcoal);
+  border-top: 1px solid var(--color-slate);
+  padding: var(--space-2xl) 0;
+  text-align: center;
+}
+
+.footer-inner p {
+  color: var(--color-gray-600);
+  font-size: var(--font-size-sm);
+}
+
+.footer-inner a {
+  color: var(--color-gray-400);
+}
+
+.footer-inner a:hover {
+  color: var(--color-orange);
+}
+
+/* --- CTA Banner --- */
+.cta-banner {
+  text-align: center;
+  padding: var(--space-3xl) 0;
+  background: linear-gradient(135deg, var(--color-charcoal) 0%, var(--color-slate) 100%);
+}
+
+.cta-banner h2 {
+  margin-bottom: var(--space-md);
+}
+
+.cta-banner p {
+  color: var(--color-gray-200);
+  margin-bottom: var(--space-xl);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================
+   Responsive Breakpoints
+   ============================================ */
+
+/* Tablet (640px+) */
+@media (min-width: 640px) {
+  h1 { font-size: var(--font-size-4xl); }
+  h2 { font-size: var(--font-size-3xl); }
+
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+
+  .coach-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .coach-photo {
+    min-width: 250px;
+    margin: 0;
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  h1 { font-size: var(--font-size-5xl); }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+  .hero {
+    padding: var(--space-4xl) 0;
+  }
+}
