@@ -1,10 +1,10 @@
-# West Side Basketball
+# Westside Kings & Queens
 
-Marcus Draney's AAU basketball program near Cyprus High School, West Jordan, Utah.
+Marcus Draney's AAU basketball program in West Valley, Utah.
 
 ## About
 
-West Side Basketball provides competitive AAU basketball training and development for youth players. Our program focuses on skill development, teamwork, and preparing players for the next level.
+Westside Kings & Queens provides competitive AAU basketball training and development for youth players. Our program focuses on skill development, teamwork, and preparing players for the next level.
 
 ## Site
 

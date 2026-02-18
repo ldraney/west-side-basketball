@@ -1,4 +1,4 @@
-# West Side Basketball — Project Instructions
+# Westside Kings & Queens — Project Instructions
 
 ## Tech Stack
 

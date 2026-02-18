@@ -1,5 +1,5 @@
 /* ============================================
-   West Side Basketball — Shared Styles
+   Westside Kings & Queens — Shared Styles
    Mobile-first, dark sports aesthetic
    ============================================ */
 
@@ -206,10 +206,20 @@ h4 { font-size: var(--font-size-lg); }
 }
 
 .nav-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
   font-size: var(--font-size-lg);
   font-weight: 700;
   color: var(--color-white);
   text-decoration: none;
+}
+
+.nav-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .nav-brand:hover {
@@ -425,15 +435,15 @@ h4 { font-size: var(--font-size-lg); }
 .coach-photo {
   width: 100%;
   max-width: 300px;
-  aspect-ratio: 3 / 4;
   background-color: var(--color-slate);
   border-radius: var(--border-radius-lg);
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-gray-400);
-  font-size: var(--font-size-sm);
+  overflow: hidden;
+}
+
+.coach-photo img {
+  width: 100%;
+  height: auto;
 }
 
 .coach-info h2,
