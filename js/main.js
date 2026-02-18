@@ -1,4 +1,4 @@
-// West Side Basketball — Mobile nav toggle
+// Westside Kings & Queens — Mobile nav toggle
 (function () {
   var toggle = document.querySelector('.nav-toggle');
   var menu = document.getElementById('nav-menu');
