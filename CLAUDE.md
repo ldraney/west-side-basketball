@@ -25,7 +25,7 @@ west-side-basketball/
 - **CSS custom properties** for all design tokens (colors, spacing, typography)
 - **Relative paths** for all internal links (site lives at `/west-side-basketball/` subdirectory)
 - **System font stack**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`
-- **Dark sports aesthetic**: Navy/charcoal backgrounds + orange/gold accents
+- **Dark sports aesthetic**: Red & black color scheme (Adidas-sponsored program)
 - **Semantic HTML**: Use proper heading hierarchy, landmarks, and ARIA where needed
 - **Progressive enhancement**: Core content works without JS
 
