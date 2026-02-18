@@ -8,11 +8,9 @@
   /* Colors — Red & Black */
   --color-black: #0a0a0a;
   --color-dark: #141414;
-  --color-dark-alt: #1c1c1c;
   --color-gray-800: #262626;
   --color-red: #d42026;
   --color-red-hover: #e8333a;
-  --color-red-dark: #a01820;
   --color-white: #ffffff;
   --color-gray-100: #f0f0f0;
   --color-gray-200: #d4d4d4;
@@ -509,7 +507,6 @@ h4 { font-size: var(--font-size-lg); }
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);
-  border-left: 3px solid var(--color-red);
 }
 
 .coach-photo {
