@@ -369,6 +369,22 @@ h4 { font-size: var(--font-size-lg); }
   color: var(--color-gray-400);
 }
 
+/* --- Details List --- */
+.details-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.details-list li {
+  color: var(--color-gray-400);
+}
+
+.details-list strong {
+  color: var(--color-gray-100);
+}
+
 /* --- FAQ --- */
 .faq-item {
   padding: var(--space-lg) 0;
