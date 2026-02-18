@@ -107,6 +107,16 @@ ul, ol {
   padding: 0 var(--space-lg);
 }
 
+.card-centered {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mt-md {
+  margin-top: var(--space-md);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
