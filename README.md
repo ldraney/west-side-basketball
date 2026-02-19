@@ -4,7 +4,7 @@ Marcus Draney's AAU basketball program in West Valley, Utah.
 
 ## About
 
-Westside Kings & Queens provides competitive AAU basketball training and development for high school players (15U, 16U, 17U). Sponsored by Adidas.
+Westside Kings & Queens provides competitive AAU basketball training and development for high school players (15U, 16U, 17U).
 
 ## Site
 
