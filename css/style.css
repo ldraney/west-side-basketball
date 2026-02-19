@@ -368,9 +368,28 @@ h4 { font-size: var(--font-size-lg); }
   letter-spacing: 0.1em;
 }
 
-.sponsor-bar span {
+.brand-names {
   color: var(--color-white);
   font-weight: 800;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.15em;
+  margin-top: var(--space-sm);
+}
+
+.sponsor-cta {
+  margin-top: var(--space-sm);
+  font-size: 0.8rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.sponsor-cta a {
+  color: var(--color-red);
+  text-decoration: underline;
+}
+
+.sponsor-cta a:hover {
+  color: var(--color-red-hover);
 }
 
 /* --- Sections --- */
