@@ -607,6 +607,12 @@ h4 { font-size: var(--font-size-lg); }
   color: var(--color-red);
 }
 
+.powered-by {
+  margin-top: var(--space-md);
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
 /* --- CTA Banner --- */
 .cta-banner {
   text-align: center;
