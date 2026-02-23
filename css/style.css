@@ -300,14 +300,60 @@ h4 { font-size: var(--font-size-lg); }
   gap: var(--space-lg);
 }
 
+/* --- Tryout Announcement Banner --- */
+.tryout-banner {
+  margin-top: var(--nav-height);
+  background-color: var(--color-red);
+  padding: var(--space-lg) 0;
+  text-align: center;
+}
+
+.tryout-banner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.tryout-banner-date {
+  font-size: var(--font-size-lg);
+  font-weight: 800;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tryout-banner-location {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tryout-banner .btn {
+  margin-top: var(--space-sm);
+  background-color: var(--color-white);
+  color: var(--color-red);
+  font-size: var(--font-size-sm);
+  padding: var(--space-sm) var(--space-xl);
+}
+
+.tryout-banner .btn:hover {
+  background-color: var(--color-gray-100);
+  color: var(--color-red);
+}
+
 /* --- Hero --- */
 .hero {
-  padding: var(--space-4xl) 0 var(--space-3xl);
   margin-top: var(--nav-height);
+  padding: var(--space-3xl) 0;
   text-align: center;
   background: var(--color-black);
   position: relative;
   overflow: hidden;
+}
+
+/* When banner precedes hero (index.html), banner already clears the nav */
+.tryout-banner + .hero {
+  margin-top: 0;
 }
 
 .hero::before {
