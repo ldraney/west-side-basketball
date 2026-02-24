@@ -438,6 +438,69 @@ h4 { font-size: var(--font-size-lg); }
   color: var(--color-red-hover);
 }
 
+/* --- Sponsors Grid --- */
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.sponsor-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  text-decoration: none;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.sponsor-card:hover {
+  border-color: var(--color-red);
+  transform: translateY(-2px);
+}
+
+.sponsor-logo {
+  background-color: var(--color-gray-800);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.sponsor-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.sponsor-info h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.sponsor-info p {
+  color: var(--color-gray-400);
+  margin-bottom: var(--space-md);
+}
+
+.sponsor-coupon {
+  color: var(--color-red) !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: var(--font-size-sm);
+}
+
+.sponsor-coupon strong {
+  color: var(--color-white);
+  background-color: var(--color-gray-800);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--border-radius);
+  font-family: monospace;
+  letter-spacing: 0.05em;
+}
+
+.sponsor-card .btn {
+  align-self: flex-start;
+}
+
 /* --- Sections --- */
 .section {
   padding: var(--space-3xl) 0;
