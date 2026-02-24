@@ -480,22 +480,6 @@ h4 { font-size: var(--font-size-lg); }
   margin-bottom: var(--space-md);
 }
 
-.sponsor-coupon {
-  color: var(--color-red) !important;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  font-size: var(--font-size-sm);
-}
-
-.sponsor-coupon strong {
-  color: var(--color-white);
-  background-color: var(--color-gray-800);
-  padding: var(--space-xs) var(--space-sm);
-  border-radius: var(--border-radius);
-  font-family: monospace;
-  letter-spacing: 0.05em;
-}
 
 .sponsor-card .btn {
   align-self: flex-start;
